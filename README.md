@@ -43,5 +43,7 @@ The underlying mathematical engine bypasses the immense computational complexity
 * **Supervised Efficiency**: Tailored for 96GB RAM environments, the multi-stage architecture allows manual pipeline monitoring and dynamic stage-gating to completely avoid memory bottlenecks during wild ramification spikes.
 
 ## Requirements & Environment
-* **PARI/GP** (for polynomial optimization via `polredabs`)
-* **Mathematica** (for structural symmetry analysis)
+* **PARI/GP**: Utilized natively for prime filtration, matrix relations, and heavy polynomial reduction via `polredabs()`.
+* **Mathematica**: Utilized independently for post-generation structural symmetry analysis and Galois group verification.
+
+*Note: The open-source scripts provided in this repository are fully functional for reproducing the Degree 5 and Degree 7 verification datasets.*
