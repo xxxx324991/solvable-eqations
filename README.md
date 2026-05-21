@@ -36,6 +36,12 @@ The underlying mathematical engine bypasses the immense computational complexity
 3. **Algebraic Valuation & Power Criteria**: Locate a defining polynomial whose constant term is a perfect 11th or 13th power. The product of roots reducing to the subfield must evaluate to a perfect 11th or 13th power in that local ring, while ensuring the individual roots themselves are not trivial powers.
 4. **Radical Extension & Absolute Reduction**: Take the 11th or 13th radical of the polynomial's root, isolate the target 11 or 13-degree subfield, and compute the final optimized defining polynomial using the `polredabs()` algorithm in **PARI/GP**.
 
+## Hardware Utilization & Scaling
+
+* **Thread Scaling**: Demonstrates near-linear scaling up to 8 threads under parallel execution loops.
+* **Algorithmic & Framework Optimization**: Extensively optimized for large-matrix relations, structural invariants filtering, and heavy polynomial coefficient reductions natively within PARI/GP.
+* **Supervised Efficiency**: Tailored for 96GB RAM environments, the multi-stage architecture allows manual pipeline monitoring and dynamic stage-gating to completely avoid memory bottlenecks during wild ramification spikes.
+
 ## Requirements & Environment
 * **PARI/GP** (for polynomial optimization via `polredabs`)
 * **Mathematica** (for structural symmetry analysis)
