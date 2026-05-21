@@ -42,6 +42,23 @@ The underlying mathematical engine bypasses the immense computational complexity
 * **Algorithmic & Framework Optimization**: Extensively optimized for large-matrix relations, structural invariants filtering, and heavy polynomial coefficient reductions natively within PARI/GP.
 * **Supervised Efficiency**: Tailored for 96GB RAM environments, the multi-stage architecture allows manual pipeline monitoring and dynamic stage-gating to completely avoid memory bottlenecks during wild ramification spikes.
 
+## Hardware and Performance
+
+My algorithms are implemented in **PARI/GP and Mathematica**, and I tested them on two different computers based on the
+computational difficulty:
+
+* **32GB Laptop (Single-Thread)**: A
+standard Dell laptop was used to run all the Degree 5 and Degree 7 field scans,
+as well as some of the Degree 11 and 13 scans. Since these specific search
+fields are relatively small, the code ran efficiently without running out of
+memory or significantly slowing down on this normal laptop.
+
+* **96GB Workstation**: This larger personal computer was used exclusively for the heavy computations involving
+higher horizons, specifically the Degree 11 and Degree 13 fields (such as the
+non-Abelian $F_{13}$ field at $\Delta = 4729^{11}$). These matrix reductions
+require a large amount of memory, so I manually monitored the computing
+pipeline during execution.
+
 ## Requirements & Environment
 
 * **PARI/GP**: Utilized natively for prime filtration, matrix relations, and heavy polynomial reduction via `polredabs()`.
