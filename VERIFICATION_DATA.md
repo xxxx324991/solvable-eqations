@@ -21,8 +21,8 @@ This document serves as the central hub for mathematical replication, containing
 
 | Discriminant ($\Delta$) | Polynomial | Galois Group | Status |
 | :--- | :--- | :--- | :--- |
-| ${11801}^3$ | x^5-x^4-207x^3-78x^2+7175x-13929 | $F_5$ | **New Discovery** (Unindexed) |
-| ${11969}^3$ | x^5-203x^3-297x^2+7583x+20099 | $F_5$ | **New Discovery** (Unindexed) |
+| ${11801}^3$ | $x^5-x^4-207x^3-78x^2+7175x-13929$ | $F_5$ | **New Discovery** (Unindexed) |
+| ${11969}^3$ | $x^5-203x^3-297x^2+7583x+20099$ | $F_5$ | **New Discovery** (Unindexed) |
 
 > 📌 **Note on Remaining Fields**: The complete coefficients for the remaining 18 unindexed Degree 5 fields are securely archived and will be made public immediately upon paper acceptance.
 
